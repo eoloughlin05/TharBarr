@@ -13,7 +13,6 @@ public class MoveForward : MonoBehaviour
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector3.right * Time.deltaTime * speed);

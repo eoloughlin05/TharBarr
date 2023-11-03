@@ -6,7 +6,6 @@ public class DetectCollision : MonoBehaviour
     private LivesManager livesManager;
     private ScoreManager scoreManager;
 
-    // Start is called before the first frame update
     void Start()
     {
         livesManager = GameObject.Find("LivesManager").GetComponent<LivesManager>();

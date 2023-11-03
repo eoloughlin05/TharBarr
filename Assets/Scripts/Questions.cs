@@ -27,7 +27,7 @@ public class Questions
                 QuestionText = "Which of the below words is spelt correctly?",
                 Options = new Option[]
                 {
-                    new Option {OptionId = 1, OptionText = "Banana", IsCorrect = true},
+                    new Option {OptionId = 1, OptionText = "banana", IsCorrect = true},
                     new Option {OptionId = 2, OptionText = "banna", IsCorrect = false},
                     new Option {OptionId = 3, OptionText = "banan", IsCorrect = false}
                 }

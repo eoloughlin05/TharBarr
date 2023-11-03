@@ -9,7 +9,7 @@ namespace Assets.Scripts.Helpers
     public class RandomiseArray
     {
         private static System.Random random = new System.Random();
-        private static void Shuffle<T>(T[] array)
+        public static void Shuffle<T>(T[] array)
         {
             if (array is null)
                 throw new ArgumentNullException(nameof(array));

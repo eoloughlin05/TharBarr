@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public TextMeshProUGUI livesUIDisplay;
     private bool spawnQuestion = false;
 
     public void SetSpawQuestion (bool value)
