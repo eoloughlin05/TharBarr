@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Questions
+
+    //WIP - Example questions with various topics for now for testing and alpha submission purposes. A more niche set of questions and answers will be developed for the next/final submission.
 { 
     public Question[] GetQuestions()
     {
