@@ -13,13 +13,10 @@ namespace Assets.Scripts.Helpers
         private int score = 0;
         public TextMeshProUGUI scoreUIDisplay;
 
-        private void Update()
-        {
-            scoreUIDisplay.text = "Score: " + score;
-        }
         public void UpdateScore(int value)
         {
             score += value;
+            scoreUIDisplay.text = "Score: " + score;
         }
     }
 }
