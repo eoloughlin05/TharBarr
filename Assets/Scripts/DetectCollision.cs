@@ -19,5 +19,6 @@ public class DetectCollision : MonoBehaviour
 
         if (gameObject.CompareTag("Incorrect"))
             livesManager.UpdateLives(-1);
+
     }
 }

@@ -20,7 +20,7 @@ public class MoveForward : MonoBehaviour
         if (transform.position.x > lowerBound)
         {
             Destroy(gameObject);
-            gameManager.SetSpawQuestion(true);
+            gameManager.SetSpawnQuestion(true);
         }
     }
 }

@@ -83,7 +83,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2807237658047290152}
-  m_Text: banan
+  m_Text: 2
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: -1663920504094022868}
   m_Layer: 0
   m_Name: Option
-  m_TagString: Incorrect
+  m_TagString: Correct
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

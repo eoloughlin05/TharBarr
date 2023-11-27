@@ -18,14 +18,14 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        gameManager.SetSpawQuestion(true);
+        gameManager.SetSpawnQuestion(true);
         var getQuestions = new Questions();
         questions = getQuestions.GetQuestions();
     }
 
     void Update()
     {
-        if(gameManager.GetSpawnQuestion() && questionNumber < questions.Length)
+        if(gameManager.GetSpawnQuestion() && questionNumber < questions.Length && gameManager.doesPlayerHaveLives)
         {
 
             question.text = questions[questionNumber].QuestionText;
@@ -37,7 +37,7 @@ public class SpawnManager : MonoBehaviour
                 Instantiate(optionPrefabs[j], new Vector3(18, 1, spawnZLocation[j]), optionPrefabs[j].transform.rotation);
             }
 
-            gameManager.SetSpawQuestion(false);
+            gameManager.SetSpawnQuestion(false);
             questionNumber++;
         }
         

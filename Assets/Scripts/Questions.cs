@@ -44,6 +44,17 @@ public class Questions
                     new Option {OptionId = 2, OptionText = "4", IsCorrect = false},
                     new Option {OptionId = 3, OptionText = "2", IsCorrect = true}
                 }
+            },
+            new Question
+            {
+                QuestionId = 4,
+                QuestionText = "5 - 3 = ?",
+                Options = new Option[]
+                {
+                    new Option {OptionId = 1, OptionText = "1", IsCorrect = false},
+                    new Option {OptionId = 2, OptionText = "4", IsCorrect = false},
+                    new Option {OptionId = 3, OptionText = "2", IsCorrect = true}
+                }
             }
         };
         Shuffle(questions);

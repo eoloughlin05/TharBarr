@@ -12,14 +12,25 @@ namespace Assets.Scripts.Helpers
     {
         private int lives = 3;
         public TextMeshProUGUI livesUIDisplay;
+        private GameManager gameManager;
+
+        private void Start()
+        {
+            gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        }
 
         private void Update()
         {
             livesUIDisplay.text = "Lives: " + lives;
         }
+
         public void UpdateLives(int value)
         {
             lives += value;
+            if(lives <= 0)
+            {
+                gameManager.GameOver();
+            }
         }
     }
 }
