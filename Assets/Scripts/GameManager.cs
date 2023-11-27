@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +14,7 @@ public class GameManager : MonoBehaviour
     private GameObject player;
     [SerializeField]
     private GameObject questionUIText;
+    public Button restartButton;
 
     public void Start()
     {
@@ -24,6 +27,7 @@ public class GameManager : MonoBehaviour
         player.SetActive(false);
         questionUIText.SetActive(false);
         doesPlayerHaveLives = false;
+        restartButton.gameObject.SetActive(true);
     }
 
     public void SetSpawnQuestion (bool value)
@@ -34,6 +38,11 @@ public class GameManager : MonoBehaviour
     public bool GetSpawnQuestion ()
     {
         return spawnQuestion;
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     
 }
