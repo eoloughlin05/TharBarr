@@ -20,5 +20,17 @@ public class DetectCollision : MonoBehaviour
         if (gameObject.CompareTag("Incorrect"))
             livesManager.UpdateLives(-1);
 
+        if (gameObject.CompareTag("BonusPoint"))
+            scoreManager.UpdateScore(1);
+
+        if (gameObject.CompareTag("ExtraLife"))
+            livesManager.UpdateLives(1);
+
+        if (gameObject.CompareTag("LoseAPoint"))
+            scoreManager.UpdateScore(-1);
+
+        if (gameObject.CompareTag("LoseALife"))
+            livesManager.UpdateLives(-1);
+
     }
 }

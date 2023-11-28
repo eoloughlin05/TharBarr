@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 6232176458820187972}
   - component: {fileID: 1771987093542619938}
   - component: {fileID: 3960598784646689617}
+  - component: {fileID: -4217713409693988555}
   m_Layer: 0
   m_Name: LoseALife
-  m_TagString: Untagged
+  m_TagString: LoseALife
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118,4 +119,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d5921bce5a6e29479642186b6cdd75e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
+  speed: 10
+--- !u!114 &-4217713409693988555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3225734087022373940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9b58b42d345e844188b4c2b29fdd666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

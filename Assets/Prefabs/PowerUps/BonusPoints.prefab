@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 7507672856543420491}
   - component: {fileID: 7373420607372058091}
   - component: {fileID: 2111610564789422020}
+  - component: {fileID: 1858709493099655181}
   m_Layer: 0
   m_Name: BonusPoints
-  m_TagString: Untagged
+  m_TagString: BonusPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,4 +121,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d5921bce5a6e29479642186b6cdd75e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
+  speed: 10
+--- !u!114 &1858709493099655181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252261446238134816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9b58b42d345e844188b4c2b29fdd666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

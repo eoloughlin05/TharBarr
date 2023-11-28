@@ -1,13 +1,11 @@
 ﻿using Assets.Scripts.Models;
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class SpawnManager : MonoBehaviour
 {
     public GameObject[] optionPrefabs;
+    public GameObject[] powerups;
     public Text question;
     public static bool spawnQuestion;
 
@@ -29,22 +27,53 @@ public class SpawnManager : MonoBehaviour
 
     void Update()
     {
-        if(gameManager.GetSpawnQuestion() && questionNumber < questions.Length && gameManager.doesPlayerHaveLives)
+        if (gameManager.GetSpawnQuestion() && questionNumber < questions.Length && gameManager.doesPlayerHaveLives)
         {
-
-            question.text = questions[questionNumber].QuestionText;
-            for (int j = 0; j < optionPrefabs.Length; j++)
+            // Randomly decide whether to spawn a question or a powerup
+            if (Random.Range(0f, 1f) < 0.9f) // Adjust the probability as needed (e.g., 0.8 means 80% chance for a question)
             {
-                SetOptionText(j);
-                SetOptionTag(j);
-
-                Instantiate(optionPrefabs[j], new Vector3(18, 1, spawnZLocation[j]), optionPrefabs[j].transform.rotation);
+                SpawnQuestion();
             }
-
-            gameManager.SetSpawnQuestion(false);
-            questionNumber++;
+            else
+            {
+                SpawnPowerup();
+            }
         }
-        
+    }
+
+    void SpawnQuestion()
+    {
+        question.text = questions[questionNumber].QuestionText;
+
+        for (int j = 0; j < optionPrefabs.Length; j++)
+        {
+            SetOptionText(j);
+            SetOptionTag(j);
+
+            Instantiate(optionPrefabs[j], new Vector3(18, 1, spawnZLocation[j]), optionPrefabs[j].transform.rotation);
+        }
+
+        gameManager.SetSpawnQuestion(false);
+        questionNumber++;
+    }
+
+    void SpawnPowerup()
+    {
+        GameObject selectedPowerup = GetRandomPowerup();
+        var randomZLocation = Random.Range(-11, 11);
+
+        Instantiate(selectedPowerup, new Vector3(9, 1, randomZLocation ), Quaternion.identity);
+
+        gameManager.SetSpawnQuestion(false);
+    }
+
+    GameObject GetRandomPowerup()
+    {
+        // Generate a random index within the range of the powerups array
+        int randomIndex = Random.Range(0, powerups.Length);
+
+        // Return the selected powerup
+        return powerups[randomIndex];
     }
 
 
