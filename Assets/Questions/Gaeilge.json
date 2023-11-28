@@ -1,101 +1,101 @@
 [
   {
     "QuestionId": 1,
-    "QuestionText": "What is the capital of Australia?",
+    "QuestionText": "Cad é an Ghaeilge atá ar 'hello'?",
     "Options": [
-      {"OptionId": 1, "OptionText": "Sydney", "IsCorrect": false},
-      {"OptionId": 2, "OptionText": "Melbourne", "IsCorrect": false},
-      {"OptionId": 3, "OptionText": "Canberra", "IsCorrect": true}
+      {"OptionId": 1, "OptionText": "Ola", "IsCorrect": false},
+      {"OptionId": 2, "OptionText": "héllo", "IsCorrect": false},
+      {"OptionId": 3, "OptionText": "Dia duit", "IsCorrect": true}
     ]
   },
   {
     "QuestionId": 2,
-    "QuestionText": "How many sides does a hexagon have?",
+    "QuestionText": "Cad é an Ghaeilge atá ar 'door'?",
     "Options": [
-      {"OptionId": 1, "OptionText": "5", "IsCorrect": false},
-      {"OptionId": 2, "OptionText": "6", "IsCorrect": true},
-      {"OptionId": 3, "OptionText": "7", "IsCorrect": false}
+      {"OptionId": 1, "OptionText": "tábla", "IsCorrect": false},
+      {"OptionId": 2, "OptionText": "dour", "IsCorrect": true},
+      {"OptionId": 3, "OptionText": "doras", "IsCorrect": false}
     ]
   },
   {
     "QuestionId": 3,
-    "QuestionText": "Who wrote 'Harry Potter'?",
+    "QuestionText": "Cad é an Ghaeilge atá ar 'teacher'?",
     "Options": [
-      {"OptionId": 1, "OptionText": "J.K. Rowling", "IsCorrect": true},
-      {"OptionId": 2, "OptionText": "George R.R. Martin", "IsCorrect": false},
-      {"OptionId": 3, "OptionText": "Roald Dahl", "IsCorrect": false}
+      {"OptionId": 1, "OptionText": "múinteoir", "IsCorrect": true},
+      {"OptionId": 2, "OptionText": "teachair", "IsCorrect": false},
+      {"OptionId": 3, "OptionText": "moonteoir", "IsCorrect": false}
     ]
   },
   {
     "QuestionId": 4,
-    "QuestionText": "What is the largest planet in our solar system?",
+    "QuestionText": "Cad é an Ghaeilge atá ar 'book'?",
     "Options": [
-      {"OptionId": 1, "OptionText": "Venus", "IsCorrect": false},
-      {"OptionId": 2, "OptionText": "Jupiter", "IsCorrect": true},
-      {"OptionId": 3, "OptionText": "Mars", "IsCorrect": false}
+      {"OptionId": 1, "OptionText": "bók", "IsCorrect": false},
+      {"OptionId": 2, "OptionText": "leabhar", "IsCorrect": true},
+      {"OptionId": 3, "OptionText": "leor", "IsCorrect": false}
     ]
   },
   {
     "QuestionId": 5,
-    "QuestionText": "Which of the following is a prime number: 12, 17, 22?",
+    "QuestionText": "Críochnaigh an abairt seo..'Tá ocras _'",
     "Options": [
-      {"OptionId": 1, "OptionText": "12", "IsCorrect": false},
-      {"OptionId": 2, "OptionText": "17", "IsCorrect": true},
-      {"OptionId": 3, "OptionText": "22", "IsCorrect": false}
+      {"OptionId": 1, "OptionText": "agat", "IsCorrect": false},
+      {"OptionId": 2, "OptionText": "orm", "IsCorrect": true},
+      {"OptionId": 3, "OptionText": "leo", "IsCorrect": false}
     ]
   },
   {
     "QuestionId": 6,
-    "QuestionText": "What is the capital of Japan?",
+    "QuestionText": "Críochnaigh an abairt seo..'Tá Gaeilge _'",
     "Options": [
-      {"OptionId": 1, "OptionText": "Seoul", "IsCorrect": false},
-      {"OptionId": 2, "OptionText": "Beijing", "IsCorrect": false},
-      {"OptionId": 3, "OptionText": "Tokyo", "IsCorrect": true}
+      {"OptionId": 1, "OptionText": "peann", "IsCorrect": false},
+      {"OptionId": 2, "OptionText": "faoin", "IsCorrect": false},
+      {"OptionId": 3, "OptionText": "agam", "IsCorrect": true}
     ]
   },
   {
     "QuestionId": 7,
-    "QuestionText": "What is the square root of 64?",
+    "QuestionText": "Cad é an Ghaeilge atá ar 'history'?",
     "Options": [
-      {"OptionId": 1, "OptionText": "6", "IsCorrect": false},
-      {"OptionId": 2, "OptionText": "8", "IsCorrect": true},
-      {"OptionId": 3, "OptionText": "10", "IsCorrect": false}
+      {"OptionId": 1, "OptionText": "histair", "IsCorrect": false},
+      {"OptionId": 2, "OptionText": "stair", "IsCorrect": true},
+      {"OptionId": 3, "OptionText": "histre", "IsCorrect": false}
     ]
   },
   {
     "QuestionId": 8,
-    "QuestionText": "Who painted the Mona Lisa?",
+    "QuestionText": "Cá háit a bhfuil an chontae is lú in Éirinn ?",
     "Options": [
-      {"OptionId": 1, "OptionText": "Vincent van Gogh", "IsCorrect": false},
-      {"OptionId": 2, "OptionText": "Leonardo da Vinci", "IsCorrect": true},
-      {"OptionId": 3, "OptionText": "Pablo Picasso", "IsCorrect": false}
+      {"OptionId": 1, "OptionText": "Contae Dhoire", "IsCorrect": false},
+      {"OptionId": 2, "OptionText": "Contae Lú", "IsCorrect": true},
+      {"OptionId": 3, "OptionText": "Contae na Mí", "IsCorrect": false}
     ]
   },
   {
     "QuestionId": 9,
-    "QuestionText": "Which planet is known as the 'Red Planet'?",
+    "QuestionText": "Cad é an Ghaeilge atá ar 'computer'?",
     "Options": [
-      {"OptionId": 1, "OptionText": "Earth", "IsCorrect": false},
-      {"OptionId": 2, "OptionText": "Mars", "IsCorrect": true},
-      {"OptionId": 3, "OptionText": "Venus", "IsCorrect": false}
+      {"OptionId": 1, "OptionText": "Rímhaire", "IsCorrect": false},
+      {"OptionId": 2, "OptionText": "Ríomhaire", "IsCorrect": true},
+      {"OptionId": 3, "OptionText": "Camputair", "IsCorrect": false}
     ]
   },
   {
     "QuestionId": 10,
-    "QuestionText": "What is the sum of 45 and 63?",
+    "QuestionText": "Cad é an Ghaeilge atá ar 'cup of tea'?",
     "Options": [
-      {"OptionId": 1, "OptionText": "98", "IsCorrect": true},
-      {"OptionId": 2, "OptionText": "108", "IsCorrect": false},
-      {"OptionId": 3, "OptionText": "84", "IsCorrect": false}
+      {"OptionId": 1, "OptionText": "Cupán tae", "IsCorrect": true},
+      {"OptionId": 2, "OptionText": "cupa ta", "IsCorrect": false},
+      {"OptionId": 3, "OptionText": "cup atea", "IsCorrect": false}
     ]
   },
   {
     "QuestionId": 11,
-    "QuestionText": "How many continents are there on Earth?",
+    "QuestionText": "Cad é an Ghaeilge atá ar 'lunch'?",
     "Options": [
-      {"OptionId": 1, "OptionText": "5", "IsCorrect": false},
-      {"OptionId": 2, "OptionText": "6", "IsCorrect": false},
-      {"OptionId": 3, "OptionText": "7", "IsCorrect": true}
+      {"OptionId": 1, "OptionText": "lion", "IsCorrect": false},
+      {"OptionId": 2, "OptionText": "leon", "IsCorrect": false},
+      {"OptionId": 3, "OptionText": "lón", "IsCorrect": true}
     ]
   }
 ]
