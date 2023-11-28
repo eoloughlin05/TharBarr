@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Correct
   - Incorrect
+  - BonusPoint
+  - ExtraLife
+  - LoseALife
+  - LoseAPoint
   layers:
   - Default
   - TransparentFX

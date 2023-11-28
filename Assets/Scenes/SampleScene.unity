@@ -1023,7 +1023,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 21a13e2b6cd1b2a4b994025049c3b839, type: 2}
+  - {fileID: 2100000, guid: 1df1499c641c69e45a44e2776007418d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1451,6 +1451,11 @@ MonoBehaviour:
   - {fileID: 8844946766737980754, guid: b2ff05fda25edb944906dcd61b7c9a28, type: 3}
   - {fileID: 8844946766737980754, guid: b2ff05fda25edb944906dcd61b7c9a28, type: 3}
   - {fileID: 8844946766737980754, guid: b2ff05fda25edb944906dcd61b7c9a28, type: 3}
+  powerups:
+  - {fileID: 252261446238134816, guid: 3edd195ef3b7f904ab93d468b0b7b64a, type: 3}
+  - {fileID: 1867139617717976769, guid: 74b2c45b5a7ef1645b91dda0c239b749, type: 3}
+  - {fileID: 3225734087022373940, guid: 2a6abda27e3d448419253d066f8f65ce, type: 3}
+  - {fileID: 7272309188917684278, guid: 676f7ef3b0717214d821783d57e726cd, type: 3}
   question: {fileID: 57567815}
   cubeWidth: 6
   questionTextInObject: {fileID: 0}

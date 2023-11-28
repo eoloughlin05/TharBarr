@@ -83,7 +83,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2807237658047290152}
-  m_Text: Roald Dahl
+  m_Text: 8
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1
@@ -162,7 +162,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d239b21d3188f4b43abd78a5086a0f86, type: 2}
+  - {fileID: 2100000, guid: 2514a87709ab6a448b01fce70bf211df, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
