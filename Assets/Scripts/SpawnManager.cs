@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Models;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,9 @@ public class SpawnManager : MonoBehaviour
     private Question[] questions;
     private GameManager gameManager;
     private int questionNumber = 0;
+
+    public float cubeWidth = 6f;
+    public TextMesh questionTextInObject;
 
     void Start()
     {
@@ -42,6 +46,7 @@ public class SpawnManager : MonoBehaviour
         }
         
     }
+
 
     private void SetOptionTag(int j)
     {
