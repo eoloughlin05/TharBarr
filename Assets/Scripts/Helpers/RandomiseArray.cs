@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assets.Scripts.Helpers
 {
-    //WIP - Refactoring this out from SpawnManager class - will complete in next release
+    //WIP - Refactoring this out from SpawnManager class - will complete in final release
     public class RandomiseArray
     {
         private static System.Random random = new System.Random();
