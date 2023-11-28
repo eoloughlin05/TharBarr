@@ -23,6 +23,10 @@ public class GameManager : MonoBehaviour
     private LivesManager livesManager;
     public GameObject titleScreen;
     public string questionsCategory = "";
+    [SerializeField]
+    private GameObject scoreText;
+    [SerializeField]
+    private GameObject livesText;
 
     public void Start()
     {
@@ -41,6 +45,8 @@ public class GameManager : MonoBehaviour
         player.SetActive(true);
         spawnManager.SetActive(true);
         questionUIText.SetActive(true);
+        scoreText.SetActive(true);
+        livesText.SetActive(true);
     }
 
     public void GameOver()
@@ -48,6 +54,8 @@ public class GameManager : MonoBehaviour
         gameOverText.gameObject.SetActive(true);
         player.SetActive(false);
         questionUIText.SetActive(false);
+        scoreText.SetActive(false);
+        livesText.SetActive(false);
         doesPlayerHaveLives = false;
         restartButton.gameObject.SetActive(true);
     }
