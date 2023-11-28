@@ -20,7 +20,7 @@ public class SpawnManager : MonoBehaviour
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         gameManager.SetSpawnQuestion(true);
         var getQuestions = new Questions();
-        questions = getQuestions.GetQuestions();
+        questions = getQuestions.GetQuestions(gameManager.questionsCategory);
     }
 
     void Update()

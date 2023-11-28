@@ -36,7 +36,7 @@ namespace Assets.Scripts.Helpers
 
         public void ResetLives()
         {
-            lives = 0;
+            lives = 3;
         }
     }
 }
