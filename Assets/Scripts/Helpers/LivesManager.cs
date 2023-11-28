@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 namespace Assets.Scripts.Helpers
 {
@@ -31,6 +32,11 @@ namespace Assets.Scripts.Helpers
             {
                 gameManager.GameOver();
             }
+        }
+
+        public void ResetLives()
+        {
+            lives = 0;
         }
     }
 }

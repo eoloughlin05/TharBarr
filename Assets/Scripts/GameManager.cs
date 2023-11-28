@@ -4,6 +4,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
+using Assets.Scripts.Helpers;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,12 +15,32 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject player;
     [SerializeField]
+    private GameObject spawnManager;
+    [SerializeField]
     private GameObject questionUIText;
     public Button restartButton;
+    private ScoreManager scoreManager;
+    private LivesManager livesManager;
+    public GameObject titleScreen;
+    public string questionsCategory = "";
 
     public void Start()
     {
         doesPlayerHaveLives = true;
+        scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
+        livesManager = GameObject.Find("LivesManager").GetComponent<LivesManager>();
+    }
+
+    public void StartGame(string category)
+    {
+        doesPlayerHaveLives = true;
+        scoreManager.ResetScore();
+        livesManager.ResetLives();
+        titleScreen.SetActive(false);
+        questionsCategory = category;
+        player.SetActive(true);
+        spawnManager.SetActive(true);
+        questionUIText.SetActive(true);
     }
 
     public void GameOver()

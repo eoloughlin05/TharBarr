@@ -18,5 +18,10 @@ namespace Assets.Scripts.Helpers
             score += value;
             scoreUIDisplay.text = "Score: " + score;
         }
+
+        public void ResetScore()
+        {
+            score = 0;
+        }
     }
 }
