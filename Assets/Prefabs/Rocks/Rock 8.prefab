@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -5139416727740168908}
   m_Layer: 0
   m_Name: Rock 8
-  m_TagString: Correct
+  m_TagString: Incorrect
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -216,7 +216,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9159322935203926300}
-  m_Text: parallel
+  m_Text: Equilateral
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1
