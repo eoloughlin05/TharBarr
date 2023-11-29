@@ -32,7 +32,7 @@ public class SpawnManager : MonoBehaviour
         if (gameManager.GetSpawnQuestion() && questionNumber < questions.Length && gameManager.doesPlayerHaveLives)
         {
             // Randomly decide whether to spawn a question or a powerup
-            if (Random.Range(0f, 1f) < 0.1f) 
+            if (Random.Range(0f, 1f) < 0.7f) 
             {
                 SpawnQuestion();
             }

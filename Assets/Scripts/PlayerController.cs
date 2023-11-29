@@ -12,6 +12,9 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem bonusPointParticle;
     public ParticleSystem loseALifeParticle;
     public ParticleSystem loseAPointParticle;
+    public ParticleSystem correctParticle;
+    public ParticleSystem incorrectParticle;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -33,6 +36,16 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("LoseAPoint"))
         {
             loseAPointParticle.Play();
+        }
+
+        if (other.gameObject.CompareTag("Correct"))
+        {
+            correctParticle.Play();
+        }
+
+        if (other.gameObject.CompareTag("Incorrect"))
+        {
+            incorrectParticle.Play();
         }
     }
 
