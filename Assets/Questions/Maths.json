@@ -46,11 +46,11 @@
 	},
 	{
 	  "QuestionId": 6,
-	  "QuestionText": "If a box contains 24 chocolates and you take away 8, how many chocolates do you have?",
+	  "QuestionText": "If a box contains 24 chocolates and 8 have been eaten, how many chocolates are left?",
 	  "Options": [
 		{"OptionId": 1, "OptionText": "8", "IsCorrect": false},
-		{"OptionId": 2, "OptionText": "16", "IsCorrect": false},
-		{"OptionId": 3, "OptionText": "None", "IsCorrect": true}
+		{"OptionId": 2, "OptionText": "16", "IsCorrect": true},
+		{"OptionId": 3, "OptionText": "None", "IsCorrect": false}
 	  ]
 	},
 	{

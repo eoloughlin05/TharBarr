@@ -50,11 +50,10 @@ public class SpawnManager : MonoBehaviour
 
         for (int questionOption = 0; questionOption < 3; questionOption++)
         {
-            var randomPrefab = Random.Range(0, 7);
-            SetOptionText(randomPrefab, questionOption);
-            SetOptionTag(randomPrefab, questionOption);
+            SetOptionText(questionOption);
+            SetOptionTag(questionOption);
 
-            Instantiate(optionPrefabs[randomPrefab], new Vector3(18, 1, spawnZLocation[questionOption]), optionPrefabs[randomPrefab].transform.rotation);
+            Instantiate(optionPrefabs[questionOption], new Vector3(18, 1, spawnZLocation[questionOption]), optionPrefabs[questionOption].transform.rotation);
         }
 
         gameManager.SetSpawnQuestion(false);
@@ -82,13 +81,13 @@ public class SpawnManager : MonoBehaviour
     }
 
 
-    private void SetOptionTag(int optionPrefab, int questionOption)
+    private void SetOptionTag(int option)
     {
-        optionPrefabs[optionPrefab].tag = questions[questionNumber].Options[questionOption].IsCorrect ? "Correct" : "Incorrect";
+        optionPrefabs[option].tag = questions[questionNumber].Options[option].IsCorrect ? "Correct" : "Incorrect";
     }
 
-    private void SetOptionText(int optionPrefab, int questionOption)
+    private void SetOptionText(int option)
     {
-        optionPrefabs[optionPrefab].GetComponentInChildren<TextMesh>().text = questions[questionNumber].Options[questionOption].OptionText;
+        optionPrefabs[option].GetComponentInChildren<TextMesh>().text = questions[questionNumber].Options[option].OptionText;
     }
 }

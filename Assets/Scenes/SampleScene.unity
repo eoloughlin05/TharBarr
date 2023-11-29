@@ -2403,7 +2403,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 44.1, y: 1.51, z: 0}
-  m_LocalScale: {x: 1, y: 3, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 737969565}
@@ -2620,13 +2620,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionPrefabs:
-  - {fileID: 2369748093256259601, guid: f87e27d41398eaf4ba409abb097b1cc6, type: 3}
-  - {fileID: 4580801016865311218, guid: 1ba2c9af42457d2448ea0d00de1c39ba, type: 3}
-  - {fileID: 4765712349726661414, guid: 716e7977e94e5bc4aa9d39ee3af2444e, type: 3}
-  - {fileID: 6727396669450883648, guid: 4efff5b05a5abae42a7cb0f3e83bb04b, type: 3}
-  - {fileID: 1056913829435999208, guid: f0d7cd60847e2104793c618598877c93, type: 3}
-  - {fileID: 8154328914042109050, guid: af2409079e91c9e458072af97e337c09, type: 3}
-  - {fileID: 1291954120551610284, guid: b752ed4a67b47b74dba04e0b0638f7ba, type: 3}
+  - {fileID: 8671480179167777716, guid: 0a9e775a19bbbe048977baba9b869453, type: 3}
+  - {fileID: 4490231727141303046, guid: 2bbe461a3a3304e418e64db1c136102d, type: 3}
+  - {fileID: 7933932122683181686, guid: 80a8440f1398c754195a2d1a820940f8, type: 3}
   powerups:
   - {fileID: 252261446238134816, guid: 3edd195ef3b7f904ab93d468b0b7b64a, type: 3}
   - {fileID: 1867139617717976769, guid: 74b2c45b5a7ef1645b91dda0c239b749, type: 3}
