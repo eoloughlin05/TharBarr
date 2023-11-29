@@ -10,14 +10,6 @@ public class PlayerController : MonoBehaviour
 
     public ParticleSystem extraLifeParticle;
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("ExtraLife"))
-        {
-            extraLifeParticle.Play();
-        }
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("ExtraLife"))
