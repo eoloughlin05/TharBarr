@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5259300075143936056}
   m_Layer: 0
   m_Name: Rock 7
-  m_TagString: Incorrect
+  m_TagString: Correct
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -216,7 +216,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425030389807756337}
-  m_Text: temprature
+  m_Text: beautiful
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1

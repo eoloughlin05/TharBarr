@@ -9,12 +9,30 @@ public class PlayerController : MonoBehaviour
     public float zRange = 8.5f;
 
     public ParticleSystem extraLifeParticle;
+    public ParticleSystem bonusPointParticle;
+    public ParticleSystem loseALifeParticle;
+    public ParticleSystem loseAPointParticle;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("ExtraLife"))
         {
             extraLifeParticle.Play();
+        }
+
+        if (other.gameObject.CompareTag("BonusPoint"))
+        {
+            bonusPointParticle.Play();
+        }
+
+        if (other.gameObject.CompareTag("LoseALife"))
+        {
+            loseALifeParticle.Play();
+        }
+
+        if (other.gameObject.CompareTag("LoseAPoint"))
+        {
+            loseAPointParticle.Play();
         }
     }
 

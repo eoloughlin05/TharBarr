@@ -9,7 +9,7 @@ public class SpawnManager : MonoBehaviour
     public Text question;
     public static bool spawnQuestion;
 
-    private float[] spawnZLocation = { -7, 0, 7 };
+    private float[] spawnZLocation = { -8, 0, 8 };
     private Question[] questions;
     private GameManager gameManager;
     private int questionNumber = 0;
