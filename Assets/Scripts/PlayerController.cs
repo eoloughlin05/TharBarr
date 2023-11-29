@@ -8,9 +8,22 @@ public class PlayerController : MonoBehaviour
     public float speed = 10.0f;
     public float zRange = 8.5f;
 
-    void Start()
+    public ParticleSystem extraLifeParticle;
+
+    private void OnCollisionEnter(Collision collision)
     {
-        
+        if (collision.gameObject.CompareTag("ExtraLife"))
+        {
+            extraLifeParticle.Play();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("ExtraLife"))
+        {
+            extraLifeParticle.Play();
+        }
     }
 
     void Update()

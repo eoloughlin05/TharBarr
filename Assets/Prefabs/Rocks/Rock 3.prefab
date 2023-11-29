@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 420804786908282869}
   m_Layer: 0
   m_Name: Rock 3
-  m_TagString: Incorrect
+  m_TagString: Correct
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -216,7 +216,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5322725385383965425}
-  m_Text: 45
+  m_Text: orm
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1
