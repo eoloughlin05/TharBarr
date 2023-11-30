@@ -83,7 +83,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8326223325027935744}
-  m_Text: $35
+  m_Text: "R\xEDmhaire"
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 260306922665265792}
   m_Layer: 0
   m_Name: Option
-  m_TagString: Correct
+  m_TagString: Incorrect
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
