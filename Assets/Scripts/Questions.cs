@@ -11,8 +11,7 @@ public class Questions
 { 
     public Question[] GetQuestions(string category)
     {
-        string folderPath = Path.Combine(Application.dataPath, "Questions");
-        string filePath = Path.Combine(folderPath, $"{category}.json");
+        string filePath = Path.Combine(Application.streamingAssetsPath, $"{category}.json");
 
         if (File.Exists(filePath))
         {
