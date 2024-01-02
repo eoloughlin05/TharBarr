@@ -12,16 +12,25 @@ namespace Assets.Scripts.Helpers
     {
         private int score = 0;
         public TextMeshProUGUI scoreUIDisplay;
+        private DifficultyManager difficultyManager;
+
+        private void Start()
+        {
+            difficultyManager = GameObject.Find("DifficultyManager").GetComponent<DifficultyManager>();
+        }
 
         public void UpdateScore(int value)
         {
             score += value;
             scoreUIDisplay.text = "Score: " + score;
+            difficultyManager.UpdateSpeed();
         }
 
         public void ResetScore()
         {
             score = 0;
         }
+
+        public int GetScore() => score;
     }
 }

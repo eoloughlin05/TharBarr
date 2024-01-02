@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class MoveForward : MonoBehaviour
 {
-    public float speed = 40.0f;
     private float lowerBound = 54;
     private GameManager gameManager;
+    private DifficultyManager difficultyManager;
 
     private void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        difficultyManager = GameObject.Find("DifficultyManager").GetComponent<DifficultyManager>();
     }
 
     void Update()
     {
-        transform.Translate(Vector3.right * Time.deltaTime * speed);
+        transform.Translate(Vector3.right * Time.deltaTime * difficultyManager.GetMovingSpeed());
 
         if (transform.position.x > lowerBound)
         {

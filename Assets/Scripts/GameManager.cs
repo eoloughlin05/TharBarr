@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     public Button restartButton;
     private ScoreManager scoreManager;
     private LivesManager livesManager;
+    private DifficultyManager difficultyManager;
     public GameObject titleScreen;
     public string questionsCategory = "";
     [SerializeField]
@@ -33,6 +34,7 @@ public class GameManager : MonoBehaviour
         doesPlayerHaveLives = true;
         scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
         livesManager = GameObject.Find("LivesManager").GetComponent<LivesManager>();
+        difficultyManager = GameObject.Find("DifficultyManager").GetComponent<DifficultyManager>();
     }
 
     public void StartGame(string category)
@@ -47,6 +49,7 @@ public class GameManager : MonoBehaviour
         questionUIText.SetActive(true);
         scoreText.SetActive(true);
         livesText.SetActive(true);
+        difficultyManager.ResetSpeed();
     }
 
     public void GameOver()
