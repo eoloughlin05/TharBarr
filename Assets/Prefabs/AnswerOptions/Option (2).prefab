@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3852458894469925785}
   m_Layer: 0
   m_Name: Option (2)
-  m_TagString: Incorrect
+  m_TagString: Correct
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,7 +120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d5921bce5a6e29479642186b6cdd75e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
 --- !u!114 &3852458894469925785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,7 +215,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8920190789074469622}
-  m_Text: Camputair
+  m_Text: 105
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1

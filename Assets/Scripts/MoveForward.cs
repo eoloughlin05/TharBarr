@@ -16,7 +16,15 @@ public class MoveForward : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector3.right * Time.deltaTime * difficultyManager.GetMovingSpeed());
+        float speedMultiplier = 1.0f;
+
+        // Check if the space bar is pressed
+        if (Input.GetKey(KeyCode.Space))
+        {
+            speedMultiplier = 2.0f;
+        }
+
+        transform.Translate(Vector3.right * Time.deltaTime * difficultyManager.GetMovingSpeed() * speedMultiplier);
 
         if (transform.position.x > lowerBound)
         {
